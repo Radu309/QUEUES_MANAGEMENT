@@ -143,9 +143,9 @@ public class SimulationManager implements Runnable {
         int index = 0;
         for(Server it: servers){
             System.out.print("Queue " + index + ":  ");
-            it.showTaskList(true);
             result = result + "Queue " + index + ":  ";
             result = result + it.showTaskList(false);
+            it.showTaskList(true);
             index++;
         }
         System.out.println();

@@ -8,12 +8,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+import javafx.fxml.Initializable;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 
-public class QueueController {
+public class QueueController implements Initializable {
     public QueueController() {}
 
     ///         Blocks
@@ -36,7 +40,9 @@ public class QueueController {
     @FXML
     private Button start = new Button();
     @FXML
-    TextArea logOfEvents = new TextArea("ASDASD");
+    TextArea textArea;
+    static TextArea logOfEvents;
+
     @FXML
     private Button back = new Button();
     ///         Actions
@@ -78,12 +84,15 @@ public class QueueController {
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
     }
-    @FXML
-    public void logOfEventsWindow(int currentTime, String taskList, String queueList){
+    public void initialize(URL url, ResourceBundle rb){
+        logOfEvents = textArea;
+    }
+    public static String logOfEventsWindow(int currentTime, String taskList, String queueList){
         //System.out.println("-------------------------------------------------------------------------------");
         logOfEvents.appendText("Current time is: " + currentTime + "\n" + taskList + queueList );
         //logOfEvents.setText(logOfEvents.getText());
         //System.out.println(logOfEvents.getText() + " <========================================");
+        return logOfEvents.getText();
     }
     //getters and setters
 

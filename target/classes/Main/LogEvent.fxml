@@ -87,7 +87,7 @@
     </MenuBar>
     <SplitPane focusTraversable="true" prefHeight="552.0" prefWidth="682.0" VBox.vgrow="ALWAYS">
          <items>
-            <TextArea fx:id="logOfEvents" prefHeight="318.0" prefWidth="274.0" />
+            <TextArea fx:id="textArea" prefHeight="318.0" prefWidth="274.0" />
          </items>
     </SplitPane>
     <HBox id="HBox" alignment="CENTER" prefHeight="246.0" prefWidth="710.0" spacing="5.0" VBox.vgrow="NEVER">
