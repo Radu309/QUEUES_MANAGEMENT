@@ -80,10 +80,10 @@ public class QueueController {
     }
     @FXML
     public void logOfEventsWindow(int currentTime, String taskList, String queueList){
-        System.out.println("-------------------------------------------------------------------------------");
+        //System.out.println("-------------------------------------------------------------------------------");
         logOfEvents.appendText("Current time is: " + currentTime + "\n" + taskList + queueList );
-        logOfEvents.setText(logOfEvents.getText());
-        System.out.println(logOfEvents.getText() + " <========================================");
+        //logOfEvents.setText(logOfEvents.getText());
+        //System.out.println(logOfEvents.getText() + " <========================================");
     }
     //getters and setters
 
