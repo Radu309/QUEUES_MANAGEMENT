@@ -10,7 +10,7 @@ public class Strategy {
     }
 }
 
-class ConcreteStrategyTime extends Strategy {
+class ConcreteStrategyTime extends  Strategy{
     public synchronized void addTask(List<Server> servers, Task t){
         int minim = 100;
         int finalTime=0;

@@ -118,6 +118,8 @@ public class SimulationManager implements Runnable {
         }
         result /= numberOfClients;
         System.out.println("AVERAGE TIME IS: " + result);
+        QueueController queueController = new QueueController();
+        queueController.showAverageTime(result);
         try {
             FileWriter resultWriteInFile = new FileWriter("Testing.txt",true);
             resultWriteInFile.write("AVERAGE TIME IS: " + result);

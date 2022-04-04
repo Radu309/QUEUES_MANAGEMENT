@@ -94,6 +94,10 @@ public class QueueController implements Initializable {
         //System.out.println(logOfEvents.getText() + " <========================================");
         return logOfEvents.getText();
     }
+    public static String showAverageTime(float averageTime){
+        logOfEvents.appendText("Average time is:" + averageTime + "\n");
+        return logOfEvents.getText();
+    }
     //getters and setters
 
     public TextField getNumberOfTasks() {return numberOfTasks;}

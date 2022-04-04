@@ -12,6 +12,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import static javafx.application.Application.launch;
+
 public class MainQueue extends Application {
     @Override
     public void start(Stage stage0) throws IOException {
